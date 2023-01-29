@@ -1,38 +1,314 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Zoom-in animation */
+.zoom-in{
+  animation: zoom-in 400ms;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@keyframes zoom-in {
+  0%{
+    transform: scale(0);
+  }
+  50%{
+    transform: scale(1.0);
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+body{
+  background-color: rgb(32, 32, 32) !important;
 }
 
-.App-link {
-  color: #61dafb;
+h2{
+  font-family: 'Cinzel';
+  color: rgb(242, 205, 77) !important;
+  margin-bottom: 0px!important;
+  line-height: 0.79!important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.stephen{
+  color: rgb(242, 205, 77) !important;
+  margin-top: 150px;
+  margin-bottom: -5.5px !important;
+  font-weight: bolder !important;
+  font-size: 50px !important;
+}
+
+.king{
+  color: rgb(32, 32, 32) !important;
+  font-weight: bolder !important;
+  font-size: 150px;
+}
+
+.img-thumbnail{
+  background-color: rgb(160, 11, 11) !important;
+  border-color: rgb(242, 205, 77) !important;
+}
+
+.banner-home{
+    width: 00px !important;
+    height: 550px !important;
+}
+
+.navbar{
+  background-color: rgb(32, 32, 32) !important;
+  padding: 50px 150px !important;
+}
+
+.brand{
+  font-family: 'Cinzel' !important;
+  font-size: 30px !important;
+  color:rgb(242, 205, 77) !important;
+}
+
+.navbar-typewriter{
+  position: relative;
+  top: 25px;
+  right: 140px;
+}
+
+.navbar-balloon{
+  position: relative;
+  top: 30px;
+  left: 55px;
+}
+
+.navbar-ship{
+  position: relative;
+  top: 30px;
+  left: 160px !important;
+}
+
+.navbar-cujo{
+  position: relative;
+  top: 30px;
+  left: 284px !important;
+}
+
+.navbar-vampire{
+  position: relative;
+  top: 30px;
+  left: 295px !important;
+}
+
+.navbar-link{
+  color: rgb(242, 205, 77) !important;
+  text-decoration: none !important;
+  font-family: 'Cinzel' !important;
+  font-size: 14px !important;
+  margin-left: 10px;
+}
+
+.navbar-link:hover{
+  color: rgb(242, 205, 77) !important;
+  box-shadow: groove rgb(160, 11, 11) 6px !important;
+}
+
+.buscar{
+  font-family: 'Cinzel';
+  color: rgb(242, 205, 77) !important;
+}
+
+.input-buscar{
+  background-color: transparent !important;
+  border: 2px solid rgb(242, 205, 77);
+  border-radius: 5px;
+  color: #fff;
+  font-family: 'Cinzel' !important
+}
+
+.card-login{
+  background-color: rgb(242, 205, 77) !important;
+  border: 2px rgb(242, 205, 77) solid !important;
+  color: rgb(32, 32, 32);
+  font-family: 'Cinzel';
+}
+
+.login-title{
+  color: rgb(32, 32, 32);
+  font-size: 30px !important;
+  font-weight: bolder !important;
+}
+
+.btn-login{
+  background-color: rgb(160, 11, 11) !important;
+  border: rgb(160, 11, 11) solid 1px !important;
+  font-weight: bold !important;
+}
+
+.input-login{
+  background-color: rgb(32, 32, 32) !important;
+  border: 1px rgb(32, 32, 32) solid !important;
+  color: #fff !important;
+}
+
+.campos-obligatorios{
+  color: rgb(160, 11, 11) !important;
+}
+
+/* /////////////////////////////////////////////////////////////////// */
+/* SECTION YELLOW */
+/* /////////////////////////////////////////////////////////////////// */
+
+.section-yellow{
+  background-color: rgb(242, 205, 77) !important;
+  padding: 0 150px 100px 150px;
+}
+
+.card-section-yellow{
+  background-color: rgb(32, 32, 32) !important;
+  border: 2px rgb(32, 32, 32) solid !important;
+  padding: 10px;
+  color: rgb(242, 205, 77);
+  font-family: 'Cinzel';
+}
+
+.btn-section-yellow{
+  background-color: rgb(160, 11, 11) !important;
+  border: rgb(160, 11, 11) solid 1px !important;
+  font-weight: bold !important;
+}
+
+.btn-edit-section-yellow{
+  background-color: rgb(32, 32, 32) !important;
+  border: rgb(160, 11, 11) solid 1px !important;
+  font-weight: bold !important;
+  color: rgb(160, 11, 11) !important;
+}
+
+.card-title-section-yellow{
+  color: rgb(242, 205, 77);
+  font-size: 30px !important;
+  font-weight: bolder !important;
+  font-family: 'Luckiest Guy' !important;
+}
+
+.card-price-section-yellow{
+  color: rgb(242, 205, 77);
+  font-size: 20px !important;
+  font-weight: bolder !important;
+}
+
+/* /////////////////////////////////////////////////////////////////// */
+/* DETALLE PAGE */
+/* /////////////////////////////////////////////////////////////////// */
+
+.detalle-title{
+  color: rgb(242, 205, 77) !important;
+  margin-bottom: -5.5px !important;
+  font-weight: bolder !important;
+  font-size: 50px !important;
+  font-family: 'Cinzel';
+  margin-left: 350px;
+}
+
+.detalle-bg-amarillo{
+  background-color: rgb(242, 205, 77);
+  padding: 50px 60px 10px 350px;
+  width: 100%;
+  font-family: 'PT Serif', serif !important;
+  font-size: 16px;
+  text-align: left;
+}
+
+.detalle-img{
+  position: relative;
+  left: 150px !important;
+}
+
+.detalle-precio{
+  color: rgb(160, 11, 11) !important;
+  font-weight: bolder !important;
+  font-size: 30px !important;
+  font-family: 'Cinzel';
+  margin-top: -28px;
+}
+
+.detalle-btn{
+  background-color: rgb(160, 11, 11) !important;
+  border: rgb(160, 11, 11) solid 1px !important;
+  font-weight: bold !important;
+  color: #fff;
+  font-family: 'Cinzel' !important;
+  margin-top: -15px;
+}
+
+
+/* /////////////////////////////////////////////////////////////////// */
+/* CHECKOUT PAGE */
+/* /////////////////////////////////////////////////////////////////// */
+
+.checkout-page{
+  background-color: rgb(242, 205, 77);
+  margin-left: 400px !important;
+}
+
+.checkout-img{
+  position: relative;
+  left: 150px;
+}
+
+.checkout-title{
+  color: rgb(32, 32, 32) !important;
+  margin-bottom: -5.5px !important;
+  font-weight: bolder !important;
+  font-size: 30px !important;
+  font-family: 'Cinzel';
+}
+
+.checkout-precio{
+  color: rgb(32, 32, 32) !important;
+  font-size: 30px !important;
+  font-family: 'Cinzel';
+  margin-top: -28px;
+}
+
+.checkout-valor{
+  color: rgb(160, 11, 11) !important;
+  margin-bottom: -5.5px !important;
+  font-size: 30px !important;
+  font-family: 'Cinzel';
+}
+
+.modal-bg{
+  background-color: rgb(242, 205, 77) !important;
+}
+
+.modal-header{
+  border-bottom: rgb(32, 32, 32) solid 1px !important;
+}
+
+.modal-title{
+  color: rgb(32, 32, 32);
+  font-family: 'Cinzel';
+  font-size: 28px !important;
+  font-weight: bold !important;
+}
+
+.modal-body{
+  color: rgb(32, 32, 32);
+  font-family: 'Cinzel';
+  font-size: 18px;
+  border-bottom: none !important;
+}
+
+.modal-footer{
+  border-top: rgb(32, 32, 32) solid 1px !important;
+}
+
+.footerYellow{
+  background-color: rgb(242, 205, 77) !important;
+}
+
+.svgMuenchen{
+  position: relative;
+  top: 38px;
+}
+
+.svgBaloon{
+  position: relative;
+  left: 68%;
+  color: rgb(160, 11, 11) !important;
 }
