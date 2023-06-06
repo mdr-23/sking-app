@@ -3,8 +3,6 @@ import CarouselHome from "../Components/CarouselHome"
 import Loading from "../Components/Loading/Loading"
 import Productos from "../Components/Productos"
 import firebase from "../Config/firebase"
-import SvgBaloon from "../img/baloon"
-import SvgMuenchen from "../img/muenchen"
 
 function Home(){
     

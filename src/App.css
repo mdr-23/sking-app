@@ -18,7 +18,7 @@
 }
 
 body{
-  background-color: rgb(32, 32, 32) !important;
+  background-color: #202020 !important;
 }
 
 h2{
@@ -43,67 +43,13 @@ h2{
 }
 
 .img-thumbnail{
-  background-color: rgb(160, 11, 11) !important;
-  border-color: rgb(242, 205, 77) !important;
+  background-color: #a00b0b !important;
+  border-color: #f2cd4d !important;
 }
 
 .banner-home{
     width: 00px !important;
     height: 550px !important;
-}
-
-.navbar{
-  background-color: rgb(32, 32, 32) !important;
-  padding: 50px 150px !important;
-}
-
-.brand{
-  font-family: 'Cinzel' !important;
-  font-size: 30px !important;
-  color:rgb(242, 205, 77) !important;
-}
-
-.navbar-typewriter{
-  position: relative;
-  top: 25px;
-  right: 140px;
-}
-
-.navbar-balloon{
-  position: relative;
-  top: 30px;
-  left: 55px;
-}
-
-.navbar-ship{
-  position: relative;
-  top: 30px;
-  left: 160px !important;
-}
-
-.navbar-cujo{
-  position: relative;
-  top: 30px;
-  left: 284px !important;
-}
-
-.navbar-vampire{
-  position: relative;
-  top: 30px;
-  left: 295px !important;
-}
-
-.navbar-link{
-  color: rgb(242, 205, 77) !important;
-  text-decoration: none !important;
-  font-family: 'Cinzel' !important;
-  font-size: 14px !important;
-  margin-left: 10px;
-}
-
-.navbar-link:hover{
-  color: rgb(242, 205, 77) !important;
-  box-shadow: groove rgb(160, 11, 11) 6px !important;
 }
 
 .buscar{

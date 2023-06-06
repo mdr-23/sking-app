@@ -2,7 +2,8 @@ import { Link } from "react-router-dom";
 import { Container, Nav, Navbar } from 'react-bootstrap'
 import { useState } from "react";
 import { useContext } from "react";
-import { AuthContext } from "../Context/AuthContext";
+import { AuthContext } from "../../Context/AuthContext";
+import "./Navbar.css"
 
 function NavBar(){
 
@@ -15,12 +16,12 @@ function NavBar(){
 
     return(
 
-        <Navbar className="navbar" collapseOnSelect expand="lg">
+      <Navbar className="navbar" collapseOnSelect expand="lg">
         <Container>
-          <Navbar.Brand onMouseEnter={() => setShowTypewriter(true)} onMouseLeave={() => setShowTypewriter(false)} className='brand' as={Link} to="/">STEPHEN KING's</Navbar.Brand>
+          <Navbar.Brand onMouseEnter={() => setShowTypewriter(true)} onMouseLeave={() => setShowTypewriter(false)} className='brand' as={Link} to="/"><img src={require('../../img/logo2.png')} alt="" height="120" /></Navbar.Brand>
           {showTypewriter && (
                 <div>
-                  <img src={require('../img/literatura.png')} height="25" className="navbar-typewriter" style={{color: "#fff !important"}} alt="Ícono de una máquina de escribir" />
+                  <img src={require('../../img/literatura.png')} height="25" className="navbar-typewriter" style={{color: "#fff !important"}} alt="Ícono de una máquina de escribir" />
                 </div>
             )}
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -32,22 +33,22 @@ function NavBar(){
             <Nav>
             {showBalloon && (
                 <div>
-                  <img src={require('../img/globo.png')} height="20" className="navbar-balloon" style={{color: "#fff !important"}} alt="Ícono de un globo" />
+                  <img src={require('../../img/globo.png')} height="20" className="navbar-balloon" style={{color: "#fff !important"}} alt="Ícono de un globo" />
                 </div>
               )}
             {showShip && (
             <div >
-              <img src={require('../img/origami.png')} height="30" className="navbar-ship" style={{color: "#fff !important"}} alt="Ícono de un barco de papel" />
+              <img src={require('../../img/origami.png')} height="30" className="navbar-ship" style={{color: "#fff !important"}} alt="Ícono de un barco de papel" />
             </div>
             )}
             {showCujo && (
                 <div>
-                  <img src={require('../img/san-bernardo.png')} height="20" className="navbar-cujo" style={{color: "#fff !important"}} alt="Ícono de una perro San Bernardo" />
+                  <img src={require('../../img/san-bernardo.png')} height="20" className="navbar-cujo" style={{color: "#fff !important"}} alt="Ícono de una perro San Bernardo" />
                 </div>
             )}
             {showVampire && (
                 <div>
-                  <img src={require('../img/vampiro.png')} height="20" className="navbar-vampire" style={{color: "#fff !important"}} alt="Ícono de un vampiro" />
+                  <img src={require('../../img/vampiro.png')} height="20" className="navbar-vampire" style={{color: "#fff !important"}} alt="Ícono de un vampiro" />
                 </div>
             )}
               <Nav.Link as={Link} className="navbar-link" to='/' onMouseEnter={() => setShowBalloon(true)} onMouseLeave={() => setShowBalloon(false)}>INICIO</Nav.Link>
